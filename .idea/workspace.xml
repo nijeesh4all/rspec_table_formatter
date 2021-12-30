@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25321ba8-2036-43dd-99ff-e4d5a6161276" name="Changes" comment="added new action for publishing">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rspec_table_formatter.gemspec" beforeDir="false" afterPath="$PROJECT_DIR$/rspec_table_formatter.gemspec" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +52,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1640838712559</updated>
-      <workItem from="1640838713708" duration="3687000" />
+      <workItem from="1640838713708" duration="4055000" />
     </task>
     <task id="LOCAL-00001" summary="initail commit">
       <created>1640839892614</created>
