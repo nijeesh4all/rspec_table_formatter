@@ -4,7 +4,7 @@ require_relative 'lib/rspec_table_formatter/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'rspec_table_formatter'
-  spec.version       = RspecTableFormatter::VERSION
+  spec.version       = RspecTableFormatter::Version::VERSION
   spec.authors       = ['Nijeesh']
   spec.email         = ['nijeesh.k@rently.com']
 
