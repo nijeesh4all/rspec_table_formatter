@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rspec_table_formatter (0.1.7)
+    rspec_table_formatter (0.1.9)
 
 GEM
   remote: https://rubygems.org/
