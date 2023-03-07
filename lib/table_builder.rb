@@ -31,7 +31,6 @@ class TableBuilder
   end
 
   def execution_status(example)
-    puts example.execution_result.status
     case example.execution_result.status
     when :passed
       '✔️  Passed'
