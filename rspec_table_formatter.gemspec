@@ -27,4 +27,8 @@ Gem::Specification.new do |spec|
   spec.bindir        = 'exe'
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
+
+
+  # dependencies
+  spec.add_dependency 'terminal-table', '~>3.0.2'
 end
