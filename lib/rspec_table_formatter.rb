@@ -7,6 +7,8 @@ require_relative './table_builder'
 class RspecTableFormatter
   class Error < StandardError; end
 
+  @configs = Configurations.new
+
   RSpec::Core::Formatters.register self, :dump_summary
 
   def initialize(output)
@@ -15,6 +17,12 @@ class RspecTableFormatter
 
   def dump_summary(notification)
     examples = notification.examples
-    @output << TableBuilder.new(examples).generate_table.to_s + "\n"
+    @output << TableBuilder.new(examples, @configs).generate_table.to_s + "\n"
+  end
+
+  class << self
+    def configure
+      yield @configs if block_given?
+    end
   end
 end

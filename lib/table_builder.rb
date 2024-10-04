@@ -4,15 +4,16 @@ require 'terminal-table'
 
 # converts the examples array to a table string
 class TableBuilder
-  def initialize(examples)
+  def initialize(examples, configs)
     @examples = examples
+    @configs = configs
   end
 
   def generate_table
     Terminal::Table.new do |t|
-      t.headings = ['Test Case', 'Expected result', 'status']
+      t.headings = @configs.headers
       t.rows = map_examples(@examples)
-      t.style = { border_left: false, border_right: false, border: :markdown }
+      t.style = @configs.table_style
     end
   end
 
@@ -33,11 +34,11 @@ class TableBuilder
   def execution_status(example)
     case example.execution_result.status
     when :passed
-      '✔️  Passed'
+      @configs.passed_message
     when :failed
-      '❌ Failed'
+      @configs.failed_message
     when :pending
-      '⚠️ Test case pending'
+      @configs.pending_message
     else
       ''
     end
