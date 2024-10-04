@@ -25,6 +25,9 @@ jobs:
     - name: Unset bundler deployment mode
       run: bundle config unset deployment
 
+    - name: Install dependencies
+      run: bundle install --jobs 4
+
     - name: Publish to RubyGems
 #      if: contains(github.ref, 'refs/tags/v')
       run: |
