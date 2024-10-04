@@ -1,7 +1,9 @@
 # frozen_string_literal: true
 
 require 'rspec_table_formatter/version'
+
 require_relative './table_builder'
+require_relative './rspec_table_formatter/configurations'
 
 # main class for formatter
 class RspecTableFormatter

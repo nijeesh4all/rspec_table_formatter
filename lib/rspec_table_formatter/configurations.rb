@@ -1,4 +1,4 @@
-module RspecTableFormatter
+class RspecTableFormatter
   class Configurations
 
     attr_accessor :passed_message, :failed_message, :pending_message,
