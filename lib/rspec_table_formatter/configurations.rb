@@ -1,5 +1,8 @@
+require 'singleton'
+
 class RspecTableFormatter
   class Configurations
+    include Singleton
 
     attr_accessor :passed_message, :failed_message, :pending_message,
                   :test_case_header, :expected_result_header, :status_header,
@@ -21,7 +24,7 @@ class RspecTableFormatter
     end
 
     def headers
-      [@test_case_header, @expected_result_header, @status_header]
+      [ test_case_header,  expected_result_header, status_header]
     end
   end
 end
