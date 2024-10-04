@@ -22,6 +22,9 @@ jobs:
       with:
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
 
+    - name: Unset bundler deployment mode
+      run: bundle config unset deployment
+
     - name: Publish to RubyGems
 #      if: contains(github.ref, 'refs/tags/v')
       run: |
